@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("Intel syntax");
+	printf("Holberton School");
 	return (0);
 }
