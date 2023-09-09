@@ -2,8 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main- Entry point: the function starts here */
-int main(void) /* main - the entry point*/
+/**
+ * main - Entry point of the program
+ * n: Argument count
+ *
+ * Return: 0 on success, non-zero on failure
+ */
+int main(void)
 {
 	int n;
 
