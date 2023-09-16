@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * @c: The caracter
+ * c: The caracter to print
  * Return: always 0 (Success)
  */
 int main(void)
 {
 	char c;
 
-	for (c= 'a'; c <= 'z'; ++c)
+	for (c = 'a'; c <= 'z'; ++c)
 	{
 		putchar(c);
 	}
