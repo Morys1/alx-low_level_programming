@@ -6,7 +6,7 @@
  * Return: On success 0.
  */
 void _puts(char *str)
-{	
+{
 	int i;
 
 	if (str != NULL)
