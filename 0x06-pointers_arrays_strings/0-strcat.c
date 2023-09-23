@@ -10,19 +10,25 @@
  *
  * Return: dest string
  */
-char *_strcat(char *dest, char *src)
-{
-	int j = strlen(src);
+#include <unistd.h>
 
-	if (dest == NULL || src == NULL)
+char	*_strcat(char *dest, char *src)
+{
+	unsigned int	i;
+	unsigned int	j;
+
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
 	{
-		return NULL;
+		i++;
 	}
-	char *destEnd = dest + j;
-	while (*src != '\0')
+	while (src[j] != '\0')
 	{
-		*destEnd++ = *src++;
-		*destEnd = '\0';
-		return (dest);
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
+	dest[i] = '\0';
+	return (dest);
 }
